@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Current Count: {{ counter$ | async }}</h2>
+
+  <div>
+    <button (click)="increment()" class="btn btn-primary">Increment</button
+    >&nbsp;
+
+    <button (click)="decrement()" class="btn btn-success">Decrement</button
+    >&nbsp;
+
+    <button (click)="reset()" class="btn btn-danger">Reset Counter</button>
+  </div>
+</div>
+<br />
+
+<input type="text" [(ngModel)]="value" />&nbsp;
+<button (click)="addToCounter()">Add to Counter</button>
+
+<ul *ngFor="let category of categories$ | async; let idx = index">
+  <li>{{ category.name }}</li>
+</ul>
+
+<router-outlet></router-outlet>
