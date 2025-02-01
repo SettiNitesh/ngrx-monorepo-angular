@@ -7,7 +7,13 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js",
+    "build:shell": "ng build shell --configuration production",
+    "build:flights": "ng build flights --configuration production",
+    "build:hospital": "ng build hospital --configuration production",
+    "build:akita-counter": "ng build akita-counter --configuration production",
+    "build:mfe": "ng build mfe --configuration production",
+    "deploy:gh-pages": "npm run build:all && npx gh-pages -d dist/shell -e shell && npx gh-pages -d dist/flights -e flights && npx gh-pages -d dist/hospital -e hospital && npx gh-pages -d dist/mfe -e mfe && npx gh-pages -d dist/akita-counter -e akita-counter"
   },
   "private": true,
   "dependencies": {

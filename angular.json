@@ -13,7 +13,8 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist/shell",
+            "outputPath": "dist",
+            "baseHref": "/ngrx-monorepo-angular/counter/",
             "index": "projects/shell/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/shell/tsconfig.app.json",
@@ -21,7 +22,7 @@
               {
                 "glob": "**/*",
                 "input": "projects/shell/public",
-                "output": "."
+                "output": "/"
               }
             ],
             "allowedCommonJsDependencies": [
@@ -113,8 +114,8 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist/mfe",
-
+            "outputPath": "dist",
+            "baseHref": "/ngrx-monorepo-angular/mfe/",
             "index": "projects/mfe/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/mfe/tsconfig.app.json",
@@ -122,7 +123,7 @@
               {
                 "glob": "**/*",
                 "input": "projects/mfe/public",
-                "output": "."
+                "output": "/"
               }
             ],
             "styles": [
@@ -240,8 +241,8 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist/akita-counter",
-
+            "outputPath": "dist",
+            "baseHref": "/ngrx-monorepo-angular/akita-counter/",
             "index": "projects/akita-counter/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/akita-counter/tsconfig.app.json",
@@ -249,7 +250,7 @@
               {
                 "glob": "**/*",
                 "input": "projects/akita-counter/public",
-                "output": "."
+                "output": "/"
               }
             ],
             "styles": ["projects/akita-counter/src/styles.css"],
@@ -337,8 +338,8 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist/flights",
-
+            "outputPath": "dist",
+            "baseHref": "/ngrx-monorepo-angular/flights/",
             "index": "projects/flights/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/flights/tsconfig.app.json",
@@ -346,7 +347,7 @@
               {
                 "glob": "**/*",
                 "input": "projects/flights/public",
-                "output": "."
+                "output": "/"
               }
             ],
             "styles": ["projects/flights/src/styles.css"],
@@ -434,7 +435,8 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist/hospital",
+            "outputPath": "dist",
+            "baseHref": "/ngrx-monorepo-angular/hospital/",
             "index": "projects/hospital/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/hospital/tsconfig.app.json",
@@ -442,7 +444,7 @@
               {
                 "glob": "**/*",
                 "input": "projects/hospital/public",
-                "output": "."
+                "output": "/"
               }
             ],
             "styles": ["projects/hospital/src/styles.css"],

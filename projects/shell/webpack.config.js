@@ -3,6 +3,8 @@ const {
   withModuleFederationPlugin,
 } = require("@angular-architects/module-federation/webpack");
 
+import { environment } from "./src/environments/environment";
+
 module.exports = withModuleFederationPlugin({
   name: "shell",
 
@@ -11,10 +13,10 @@ module.exports = withModuleFederationPlugin({
   },
 
   remotes: {
-    mfe: "http://localhost:4300/remoteEntry.js",
-    "akita-counter": "http://localhost:4400/remoteEntry.js",
-    flights: "http://localhost:4209/remoteEntry.js",
-    hospital: "http://localhost:4500/remoteEntry.js",
+    mfe: `${environment.urls.mfe}/remoteEntry.js`,
+    "akita-counter": `${environment.urls.akitaCounter}/remoteEntry.js`,
+    flights: `${environment.urls.flights}/remoteEntry.js`,
+    hospital: `${environment.urls.hospital}/remoteEntry.js`,
   },
 
   shared: {
