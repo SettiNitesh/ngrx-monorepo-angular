@@ -1,0 +1,1 @@
+(self.webpackChunkhospital=self.webpackChunkhospital||[]).push([[426],{8045:(r,l,e)=>{e.r(l),e.d(l,{coerceObservable:()=>n});var b=e(4866);function n(s){return(0,b.isObservable)(s)?s:(0,b.of)(s)}}}]);
