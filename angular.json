@@ -13,8 +13,7 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist",
-            "baseHref": "/ngrx-monorepo-angular/counter/",
+            "outputPath": "dist/shell",
             "index": "projects/shell/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/shell/tsconfig.app.json",
@@ -22,7 +21,7 @@
               {
                 "glob": "**/*",
                 "input": "projects/shell/public",
-                "output": "/"
+                "output": "."
               }
             ],
             "allowedCommonJsDependencies": [
@@ -53,12 +52,14 @@
                 }
               ],
               "outputHashing": "all",
+              "baseHref": "/ngrx-monorepo-angular/",
               "extraWebpackConfig": "projects/shell/webpack.prod.config.js"
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "baseHref": "/"
             }
           },
           "defaultConfiguration": "production"
@@ -114,8 +115,7 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist",
-            "baseHref": "/ngrx-monorepo-angular/mfe/",
+            "outputPath": "dist/mfe",
             "index": "projects/mfe/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/mfe/tsconfig.app.json",
@@ -123,7 +123,7 @@
               {
                 "glob": "**/*",
                 "input": "projects/mfe/public",
-                "output": "/"
+                "output": "."
               }
             ],
             "styles": [
@@ -150,12 +150,14 @@
                 }
               ],
               "outputHashing": "all",
+              "baseHref": "/ngrx-monorepo-angular/",
               "extraWebpackConfig": "projects/mfe/webpack.prod.config.js"
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "baseHref": "/"
             }
           },
           "defaultConfiguration": "production"
@@ -241,8 +243,7 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist",
-            "baseHref": "/ngrx-monorepo-angular/akita-counter/",
+            "outputPath": "dist/akita-counter",
             "index": "projects/akita-counter/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/akita-counter/tsconfig.app.json",
@@ -250,7 +251,7 @@
               {
                 "glob": "**/*",
                 "input": "projects/akita-counter/public",
-                "output": "/"
+                "output": "."
               }
             ],
             "styles": ["projects/akita-counter/src/styles.css"],
@@ -274,6 +275,7 @@
                 }
               ],
               "outputHashing": "all",
+              "baseHref": "/ngrx-monorepo-angular/",
               "extraWebpackConfig": "projects/akita-counter/webpack.prod.config.js"
             },
             "development": {
@@ -285,7 +287,8 @@
                   "replace": "projects/akita-counter/src/environments/environment.ts",
                   "with": "projects/akita-counter/src/environments/environment.development.ts"
                 }
-              ]
+              ],
+              "baseHref": "/"
             }
           },
           "defaultConfiguration": "production"
@@ -338,8 +341,7 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist",
-            "baseHref": "/ngrx-monorepo-angular/flights/",
+            "outputPath": "dist/flights",
             "index": "projects/flights/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/flights/tsconfig.app.json",
@@ -347,7 +349,7 @@
               {
                 "glob": "**/*",
                 "input": "projects/flights/public",
-                "output": "/"
+                "output": "."
               }
             ],
             "styles": ["projects/flights/src/styles.css"],
@@ -371,6 +373,7 @@
                 }
               ],
               "outputHashing": "all",
+              "baseHref": "/ngrx-monorepo-angular/",
               "extraWebpackConfig": "projects/flights/webpack.prod.config.js"
             },
             "development": {
@@ -382,7 +385,8 @@
                   "replace": "projects/flights/src/environments/environment.ts",
                   "with": "projects/flights/src/environments/environment.development.ts"
                 }
-              ]
+              ],
+              "baseHref": "/"
             }
           },
           "defaultConfiguration": "production"
@@ -435,8 +439,7 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist",
-            "baseHref": "/ngrx-monorepo-angular/hospital/",
+            "outputPath": "dist/hospital",
             "index": "projects/hospital/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/hospital/tsconfig.app.json",
@@ -444,7 +447,7 @@
               {
                 "glob": "**/*",
                 "input": "projects/hospital/public",
-                "output": "/"
+                "output": "."
               }
             ],
             "styles": ["projects/hospital/src/styles.css"],
@@ -468,12 +471,14 @@
                 }
               ],
               "outputHashing": "all",
+              "baseHref": "/ngrx-monorepo-angular/",
               "extraWebpackConfig": "projects/hospital/webpack.prod.config.js"
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "baseHref": "/"
             }
           },
           "defaultConfiguration": "production"
