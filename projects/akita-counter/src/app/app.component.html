@@ -1,0 +1,9 @@
+<div class="counter-container">
+  <h2>Counter: {{ counter$ | async }}</h2>
+  <div class="buttons">
+    <button (click)="increment()">Increment</button>
+    <button (click)="decrement()">Decrement</button>
+    <button (click)="reset()">Reset</button>
+  </div>
+</div>
+<lib-button></lib-button>

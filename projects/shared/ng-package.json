@@ -3,5 +3,6 @@
   "dest": "../../dist/shared",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": ["src/lib/styles/material.scss"]
 }
