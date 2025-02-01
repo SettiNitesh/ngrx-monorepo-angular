@@ -1,5 +1,6 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { Routes } from '@angular/router';
+import { environment } from '../environments/environment';
 import { CounterComponent } from './counter/counter.component';
 
 export const routes: Routes = [
@@ -9,7 +10,7 @@ export const routes: Routes = [
     path: 'flights',
     loadComponent: () =>
       loadRemoteModule({
-        remoteEntry: 'http://localhost:4209/remoteEntry.js',
+        remoteEntry: `${environment.urls.flights}/remoteEntry.js`,
         type: 'module',
         exposedModule: './FlightComponent',
       })
@@ -20,7 +21,7 @@ export const routes: Routes = [
     path: 'hospitals',
     loadComponent: () =>
       loadRemoteModule({
-        remoteEntry: 'http://localhost:4500/remoteEntry.js',
+        remoteEntry: `${environment.urls.hospital}/remoteEntry.js`,
         type: 'module',
         exposedModule: './HospitalComponent',
       })
@@ -31,7 +32,7 @@ export const routes: Routes = [
     path: 'akita-counter',
     loadComponent: () =>
       loadRemoteModule({
-        remoteEntry: 'http://localhost:4400/remoteEntry.js',
+        remoteEntry: `${environment.urls.akitaCounter}/remoteEntry.js`,
         type: 'module',
         exposedModule: './AkitaCounterComponent',
       })
@@ -42,7 +43,7 @@ export const routes: Routes = [
     path: 'mfe',
     loadComponent: () =>
       loadRemoteModule({
-        remoteEntry: 'http://localhost:4300/remoteEntry.js',
+        remoteEntry: `${environment.urls.mfe}/remoteEntry.js`,
         type: 'module',
         exposedModule: './MfeComponent',
       })

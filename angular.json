@@ -14,7 +14,6 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/shell",
-            "baseHref": "/shell/",
             "index": "projects/shell/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/shell/tsconfig.app.json",
@@ -111,7 +110,7 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/mfe",
-            "baseHref": "/mfe/",
+
             "index": "projects/mfe/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/mfe/tsconfig.app.json",
@@ -238,7 +237,7 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/akita-counter",
-            "baseHref": "/akita-counter/",
+
             "index": "projects/akita-counter/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/akita-counter/tsconfig.app.json",
@@ -335,7 +334,7 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/flights",
-            "baseHref": "/flights/",
+
             "index": "projects/flights/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/flights/tsconfig.app.json",
@@ -432,7 +431,6 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/hospital",
-            "baseHref": "/hospital/",
             "index": "projects/hospital/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/hospital/tsconfig.app.json",
