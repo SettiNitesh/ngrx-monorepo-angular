@@ -13,6 +13,7 @@
     "build:hospital": "ng build hospital --configuration production",
     "build:akita-counter": "ng build akita-counter --configuration production",
     "build:mfe": "ng build mfe --configuration production",
+    "build:all": "npm run build:shell && npm run build:flights && npm run build:hospital && npm run build:mfe && npm run build:akita-counter",
     "deploy:gh-pages": "npm run build:all && npx gh-pages -d dist/shell -e shell && npx gh-pages -d dist/flights -e flights && npx gh-pages -d dist/hospital -e hospital && npx gh-pages -d dist/mfe -e mfe && npx gh-pages -d dist/akita-counter -e akita-counter"
   },
   "private": true,
