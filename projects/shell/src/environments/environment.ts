@@ -1,12 +1,9 @@
-export const PROD_ENV_URL =
-  'https://settinitesh.github.io/ngrx-monorepo-angular';
-
 export const environment = {
-  production: true,
+  production: false,
   urls: {
-    mfe: PROD_ENV_URL,
-    akitaCounter: PROD_ENV_URL,
-    flights: PROD_ENV_URL,
-    hospital: PROD_ENV_URL,
+    mfe: 'http://localhost:4300',
+    akitaCounter: 'http://localhost:4400',
+    flights: 'http://localhost:4209',
+    hospital: 'http://localhost:4500',
   },
 };
