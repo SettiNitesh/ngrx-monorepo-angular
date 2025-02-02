@@ -52,14 +52,12 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/ngrx-monorepo-angular/",
               "extraWebpackConfig": "projects/shell/webpack.prod.config.js"
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true,
-              "baseHref": "/"
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
@@ -150,14 +148,13 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/ngrx-monorepo-angular/",
               "extraWebpackConfig": "projects/mfe/webpack.prod.config.js"
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true,
-              "baseHref": "/"
+              "baseHref": "."
             }
           },
           "defaultConfiguration": "production"
@@ -275,7 +272,6 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/ngrx-monorepo-angular/",
               "extraWebpackConfig": "projects/akita-counter/webpack.prod.config.js"
             },
             "development": {
@@ -287,8 +283,7 @@
                   "replace": "projects/akita-counter/src/environments/environment.ts",
                   "with": "projects/akita-counter/src/environments/environment.development.ts"
                 }
-              ],
-              "baseHref": "/"
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -373,7 +368,6 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/ngrx-monorepo-angular/",
               "extraWebpackConfig": "projects/flights/webpack.prod.config.js"
             },
             "development": {
@@ -385,8 +379,7 @@
                   "replace": "projects/flights/src/environments/environment.ts",
                   "with": "projects/flights/src/environments/environment.development.ts"
                 }
-              ],
-              "baseHref": "/"
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -471,14 +464,12 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/ngrx-monorepo-angular/",
               "extraWebpackConfig": "projects/hospital/webpack.prod.config.js"
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true,
-              "baseHref": "/"
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
