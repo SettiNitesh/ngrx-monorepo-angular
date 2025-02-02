@@ -1,10 +1,46 @@
-<nav>
-  <a routerLink="/" routerLinkActive="active">Counter</a>&nbsp;
-  <a routerLink="/flights" routerLinkActive="active">Flights</a>&nbsp;
-  <a routerLink="/hospitals" routerLinkActive="active">Hospitals</a>&nbsp;
-  <a routerLink="/akita-counter" routerLinkActive="active">Akita Counter</a>
-  &nbsp;
-  <a routerLink="/mfe" routerLinkActive="active">MFE</a>
+<nav class="bg-indigo-600 text-white">
+  <div class="max-w-7xl mx-auto px-4 py-4">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+      <div class="mb-2 sm:mb-0">
+        <a routerLink="/" class="text-2xl font-bold hover:underline">
+          Micro Front Ends
+        </a>
+      </div>
+
+      <div class="flex flex-col sm:flex-row sm:space-x-6 text-center">
+        <a
+          routerLink="/"
+          routerLinkActive="border-b-2 border-white"
+          class="py-1 hover:underline"
+          >Counter</a
+        >
+        <a
+          routerLink="/flights"
+          routerLinkActive="border-b-2 border-white"
+          class="py-1 hover:underline"
+          >Flights</a
+        >
+        <a
+          routerLink="/hospitals"
+          routerLinkActive="border-b-2 border-white"
+          class="py-1 hover:underline"
+          >Hospitals</a
+        >
+        <a
+          routerLink="/akita-counter"
+          routerLinkActive="border-b-2 border-white"
+          class="py-1 hover:underline"
+          >Akita Counter</a
+        >
+        <a
+          routerLink="/mfe"
+          routerLinkActive="border-b-2 border-white"
+          class="py-1 hover:underline"
+          >MFE</a
+        >
+      </div>
+    </div>
+  </div>
 </nav>
 
 <router-outlet></router-outlet>

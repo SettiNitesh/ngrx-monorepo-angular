@@ -34,10 +34,6 @@ mat-card-title {
   margin: 10px 0;
 }
 
-button {
-  margin: 2px;
-}
-
 .card-header {
   display: flex;
   justify-content: space-between;

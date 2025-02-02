@@ -1,9 +1,14 @@
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInput } from '@angular/material/input';
 import { RouterOutlet } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
+
 import {
   addToCounter,
   categoriesSelector,
@@ -17,7 +22,17 @@ import {
 
 @Component({
   selector: 'app-counter',
-  imports: [RouterOutlet, AsyncPipe, FormsModule, CommonModule],
+  imports: [
+    RouterOutlet,
+    AsyncPipe,
+    FormsModule,
+    CommonModule,
+    MatButtonModule,
+    MatFormField,
+    MatLabel,
+    MatInput,
+    MatIconModule,
+  ],
   templateUrl: './counter.component.html',
   styleUrl: './counter.component.css',
 })

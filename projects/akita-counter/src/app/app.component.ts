@@ -1,13 +1,14 @@
 import { AsyncPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
-import { ButtonComponent } from '../../../shared/src/lib/components/button/button.component';
+import { ButtonComponent } from 'shared';
 import { CounterQuery } from '../store/counter/counter.query';
 import { CounterService } from './service/counter.service';
 
 @Component({
   selector: 'app-root',
-  imports: [AsyncPipe, ButtonComponent],
+  imports: [AsyncPipe, MatIconModule, ButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

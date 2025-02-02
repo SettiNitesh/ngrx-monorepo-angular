@@ -1,35 +1,59 @@
-<mat-card class="card">
-  <mat-card-header class="card-header">
-    <mat-card-title style="font-size: 1.5rem; text-align: center">
-      {{ tableTitle }}
-    </mat-card-title>
-  </mat-card-header>
-  <mat-card-content class="card-content">
-    <table
-      mat-table
-      matSort
-      [dataSource]="dataSource"
-      class="mat-elevation-z8 mat-table"
-    >
-      <ng-container
-        *ngFor="let column of columns.displayedColumns; let i = index"
-        [matColumnDef]="column"
+<div [className]="'m-6'">
+  <mat-card class="card w-full bg-white rounded-lg shadow">
+    <mat-card-header class="card-header border-gray-200">
+      <mat-card-title
+        class="text-2xl font-semibold text-center text-gray-900 w-full"
       >
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>
-          {{ columns.columns[i] }}
-        </th>
-        <td mat-cell *matCellDef="let element">{{ element[column] }}</td>
-      </ng-container>
+        {{ tableTitle }}
+      </mat-card-title>
+    </mat-card-header>
 
-      <tr mat-header-row *matHeaderRowDef="columns.displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: columns.displayedColumns"></tr>
-    </table>
-  </mat-card-content>
-  <br />
-  <mat-card-footer>
-    <mat-paginator
-      [pageSizeOptions]="[10, 20, 30, 50]"
-      showFirstLastButtons
-    ></mat-paginator>
-  </mat-card-footer>
-</mat-card>
+    <mat-card-content class="overflow-hidden">
+      <div class="overflow-x-auto">
+        <table
+          mat-table
+          matSort
+          [dataSource]="dataSource"
+          class="min-w-full divide-y divide-gray-200 mat-table"
+        >
+          <ng-container
+            *ngFor="let column of columns.displayedColumns; let i = index"
+            [matColumnDef]="column"
+          >
+            <th
+              mat-header-cell
+              *matHeaderCellDef
+              mat-sort-header
+              class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap"
+            >
+              {{ columns.columns[i] }}
+            </th>
+            <td
+              mat-cell
+              *matCellDef="let element"
+              class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
+            >
+              {{ element[column] }}
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="columns.displayedColumns"></tr>
+          <tr
+            mat-row
+            *matRowDef="let row; columns: columns.displayedColumns"
+          ></tr>
+        </table>
+      </div>
+    </mat-card-content>
+
+    <mat-card-footer class="bg-white px-4 py-3 border-t border-gray-200">
+      <mat-paginator
+        [pageSizeOptions]="[10, 20, 30, 50]"
+        showFirstLastButtons
+        class="bg-transparent"
+        aria-label="Select page"
+      >
+      </mat-paginator>
+    </mat-card-footer>
+  </mat-card>
+</div>
