@@ -1,13 +1,46 @@
 <nav class="bg-indigo-600 text-white">
   <div class="max-w-7xl mx-auto px-4 py-4">
-    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-      <div class="mb-2 sm:mb-0">
+    <div class="flex justify-between items-center">
+      <div>
         <a routerLink="/" class="text-2xl font-bold hover:underline">
           Micro Front Ends
         </a>
       </div>
+      <button class="sm:hidden focus:outline-none" (click)="toggleMenu()">
+        <svg
+          *ngIf="!isMenuOpen"
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
 
-      <div class="flex flex-col sm:flex-row sm:space-x-6 text-center">
+        <!-- Close (X) Icon -->
+        <svg
+          *ngIf="isMenuOpen"
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+      </button>
+      <div class="hidden sm:flex sm:space-x-6">
         <a
           routerLink="/"
           routerLinkActive="border-b-2 border-white"
@@ -39,6 +72,46 @@
           >MFE</a
         >
       </div>
+    </div>
+    <div
+      *ngIf="isMenuOpen"
+      class="sm:hidden flex flex-col text-center mt-4 space-y-2"
+    >
+      <a
+        routerLink="/"
+        routerLinkActive="border-b-2 border-white"
+        class="py-1 hover:underline"
+        (click)="closeMenu()"
+        >Counter</a
+      >
+      <a
+        routerLink="/flights"
+        routerLinkActive="border-b-2 border-white"
+        class="py-1 hover:underline"
+        (click)="closeMenu()"
+        >Flights</a
+      >
+      <a
+        routerLink="/hospitals"
+        routerLinkActive="border-b-2 border-white"
+        class="py-1 hover:underline"
+        (click)="closeMenu()"
+        >Hospitals</a
+      >
+      <a
+        routerLink="/akita-counter"
+        routerLinkActive="border-b-2 border-white"
+        class="py-1 hover:underline"
+        (click)="closeMenu()"
+        >Akita Counter</a
+      >
+      <a
+        routerLink="/mfe"
+        routerLinkActive="border-b-2 border-white"
+        class="py-1 hover:underline"
+        (click)="closeMenu()"
+        >MFE</a
+      >
     </div>
   </div>
 </nav>
