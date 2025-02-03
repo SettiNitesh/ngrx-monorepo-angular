@@ -1,1 +1,0 @@
-(self.webpackChunkakita_counter=self.webpackChunkakita_counter||[]).push([[426],{8045:(s,r,e)=>{e.r(r),e.d(r,{coerceObservable:()=>c});var u=e(4866);function c(n){return(0,u.isObservable)(n)?n:(0,u.of)(n)}}}]);
