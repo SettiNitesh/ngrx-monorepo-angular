@@ -17,4 +17,7 @@ module.exports = withModuleFederationPlugin({
       requiredVersion: "auto",
     }),
   },
+
+  filename: "remoteEntry.js",
+  library: { type: "module" },
 });

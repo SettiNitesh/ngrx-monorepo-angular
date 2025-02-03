@@ -338,6 +338,8 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/flights",
+            "baseHref": "/ngrx-monorepo-angular/",
+            "deployUrl": "/ngrx-monorepo-angular/flights/",
             "index": "projects/flights/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/flights/tsconfig.app.json",
