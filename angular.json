@@ -115,7 +115,6 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/mfe",
-            "baseHref": "/ngrx-monorepo-angular/",
             "index": "projects/mfe/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/mfe/tsconfig.app.json",
