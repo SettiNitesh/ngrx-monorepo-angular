@@ -14,6 +14,7 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/shell",
+            "baseHref": "/ngrx-monorepo-angular/",
             "index": "projects/shell/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/shell/tsconfig.app.json",
