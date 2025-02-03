@@ -1,1 +1,0 @@
-(self.webpackChunkflights=self.webpackChunkflights||[]).push([[426,8045],{8045:(n,l,e)=>{e.r(l),e.d(l,{coerceObservable:()=>f});var b=e(4866);function f(s){return(0,b.isObservable)(s)?s:(0,b.of)(s)}}}]);
