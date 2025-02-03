@@ -4,10 +4,9 @@ export const PROD_ENV_URL =
 export const environment = {
   production: true,
   urls: {
-    mfe: `${PROD_ENV_URL}/mfe`,
+    mfe: `${PROD_ENV_URL}`,
     akitaCounter: PROD_ENV_URL,
-    flights:
-      'https://settinitesh.github.io/ngrx-monorepo-angular/flights/remoteEntry.js',
+    flights: PROD_ENV_URL,
     hospital: PROD_ENV_URL,
   },
 };

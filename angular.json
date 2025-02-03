@@ -53,7 +53,13 @@
                 }
               ],
               "outputHashing": "all",
-              "extraWebpackConfig": "projects/shell/webpack.prod.config.js"
+              "extraWebpackConfig": "projects/shell/webpack.prod.config.js",
+              "fileReplacements": [
+                {
+                  "replace": "projects/shell/src/environments/environment.ts",
+                  "with": "projects/shell/src/environments/environment.prod.ts"
+                }
+              ]
             },
             "development": {
               "optimization": false,
@@ -115,6 +121,7 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/mfe",
+            "baseHref": "/ngrx-monorepo-angular/mfe",
             "index": "projects/mfe/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/mfe/tsconfig.app.json",
@@ -242,6 +249,7 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/akita-counter",
+            "baseHref": "/ngrx-monorepo-angular/akita-counter",
             "index": "projects/akita-counter/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/akita-counter/tsconfig.app.json",
@@ -338,8 +346,7 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/flights",
-            "baseHref": "/ngrx-monorepo-angular/",
-            "deployUrl": "/ngrx-monorepo-angular/flights/",
+            "baseHref": "/ngrx-monorepo-angular/flights",
             "index": "projects/flights/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/flights/tsconfig.app.json",
@@ -436,6 +443,7 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/hospital",
+            "baseHref": "/ngrx-monorepo-angular/hospital",
             "index": "projects/hospital/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/hospital/tsconfig.app.json",
