@@ -17,3 +17,5 @@ export * from './lib/state/counter/counter.selector';
 export * from './lib/state/counter/counter.state';
 
 export * from './lib/components/button/button.component';
+export * from './lib/components/dialog/dialog.component';
+export * from './lib/components/table/table.component';
