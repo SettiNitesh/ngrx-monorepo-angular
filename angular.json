@@ -14,7 +14,6 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/shell",
-            "baseHref": "/ngrx-monorepo-angular/",
             "index": "projects/shell/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/shell/tsconfig.app.json",
@@ -59,7 +58,8 @@
                   "replace": "projects/shell/src/environments/environment.ts",
                   "with": "projects/shell/src/environments/environment.prod.ts"
                 }
-              ]
+              ],
+              "baseHref": "/ngrx-monorepo-angular/"
             },
             "development": {
               "optimization": false,
@@ -121,7 +121,6 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/mfe",
-            "baseHref": "/ngrx-monorepo-angular/mfe",
             "index": "projects/mfe/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/mfe/tsconfig.app.json",
@@ -156,7 +155,8 @@
                 }
               ],
               "outputHashing": "all",
-              "extraWebpackConfig": "projects/mfe/webpack.prod.config.js"
+              "extraWebpackConfig": "projects/mfe/webpack.prod.config.js",
+              "baseHref": "/ngrx-monorepo-angular/mfe"
             },
             "development": {
               "optimization": false,
@@ -249,7 +249,6 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/akita-counter",
-            "baseHref": "/ngrx-monorepo-angular/akita-counter",
             "index": "projects/akita-counter/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/akita-counter/tsconfig.app.json",
@@ -281,7 +280,8 @@
                 }
               ],
               "outputHashing": "all",
-              "extraWebpackConfig": "projects/akita-counter/webpack.prod.config.js"
+              "extraWebpackConfig": "projects/akita-counter/webpack.prod.config.js",
+              "baseHref": "/ngrx-monorepo-angular/akita-counter"
             },
             "development": {
               "optimization": false,
@@ -346,7 +346,6 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/flights",
-            "baseHref": "/ngrx-monorepo-angular/flights",
             "index": "projects/flights/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/flights/tsconfig.app.json",
@@ -378,7 +377,8 @@
                 }
               ],
               "outputHashing": "all",
-              "extraWebpackConfig": "projects/flights/webpack.prod.config.js"
+              "extraWebpackConfig": "projects/flights/webpack.prod.config.js",
+              "baseHref": "/ngrx-monorepo-angular/flights"
             },
             "development": {
               "optimization": false,
@@ -443,7 +443,6 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/hospital",
-            "baseHref": "/ngrx-monorepo-angular/hospital",
             "index": "projects/hospital/src/index.html",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/hospital/tsconfig.app.json",
@@ -475,7 +474,8 @@
                 }
               ],
               "outputHashing": "all",
-              "extraWebpackConfig": "projects/hospital/webpack.prod.config.js"
+              "extraWebpackConfig": "projects/hospital/webpack.prod.config.js",
+              "baseHref": "/ngrx-monorepo-angular/hospital"
             },
             "development": {
               "optimization": false,
