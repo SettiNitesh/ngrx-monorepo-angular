@@ -10,7 +10,10 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideStore } from '@ngrx/store';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
-import { categoryReducer, counterReducer } from 'shared';
+import {
+  categoryReducer,
+  counterReducer,
+} from '../../../shared/src/public-api';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
