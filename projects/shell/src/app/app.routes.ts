@@ -10,7 +10,7 @@ export const routes: Routes = [
     path: 'flights',
     loadComponent: () =>
       loadRemoteModule({
-        remoteEntry: `${environment.urls.flights}/remoteEntry.js`,
+        remoteEntry: `https://settinitesh.github.io/ngrx-monorepo-angular/remoteEntry.js`,
         type: 'module',
         exposedModule: './FlightComponent',
       })
