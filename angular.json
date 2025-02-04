@@ -22,7 +22,8 @@
                 "glob": "**/*",
                 "input": "projects/shell/public",
                 "output": "."
-              }
+              },
+              "projects/shell/src/_redirects"
             ],
             "allowedCommonJsDependencies": [
               "@angular-architects/module-federation"
