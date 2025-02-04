@@ -1,9 +1,9 @@
 export const environment = {
   production: true,
   urls: {
-    mfe: 'https://settinitesh.github.io/ngrx-monorepo-angular',
-    akitaCounter: 'https://settinitesh.github.io/ngrx-monorepo-angular',
+    mfe: 'https://golden-stardust-dd6a7b.netlify.app/',
+    akitaCounter: 'https://endearing-hamster-d97593.netlify.app/',
     flights: 'https://stunning-bavarois-9e6e52.netlify.app/',
-    hospital: 'https://settinitesh.github.io/ngrx-monorepo-angular',
+    hospital: 'https://gleeful-buttercream-4e661c.netlify.app/',
   },
 };
