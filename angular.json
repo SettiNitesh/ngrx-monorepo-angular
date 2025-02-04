@@ -259,7 +259,10 @@
                 "output": "."
               }
             ],
-            "styles": ["projects/akita-counter/src/styles.css"],
+            "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "projects/akita-counter/src/styles.css"
+            ],
             "scripts": [],
             "main": "projects/akita-counter/src/main.ts",
             "extraWebpackConfig": "projects/akita-counter/webpack.config.js",
@@ -329,7 +332,10 @@
                 "input": "projects/akita-counter/public"
               }
             ],
-            "styles": ["projects/akita-counter/src/styles.css"],
+            "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "projects/akita-counter/src/styles.css"
+            ],
             "scripts": []
           }
         }
@@ -356,7 +362,10 @@
                 "output": "."
               }
             ],
-            "styles": ["projects/flights/src/styles.css"],
+            "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "projects/flights/src/styles.css"
+            ],
             "scripts": [],
             "main": "projects/flights/src/main.ts",
             "extraWebpackConfig": "projects/flights/webpack.config.js",
@@ -426,7 +435,10 @@
                 "input": "projects/flights/public"
               }
             ],
-            "styles": ["projects/flights/src/styles.css"],
+            "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "projects/flights/src/styles.css"
+            ],
             "scripts": []
           }
         }
@@ -453,7 +465,10 @@
                 "output": "."
               }
             ],
-            "styles": ["projects/hospital/src/styles.css"],
+            "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "projects/hospital/src/styles.css"
+            ],
             "scripts": [],
             "main": "projects/hospital/src/main.ts",
             "extraWebpackConfig": "projects/hospital/webpack.config.js",
@@ -517,7 +532,10 @@
                 "input": "projects/hospital/public"
               }
             ],
-            "styles": ["projects/hospital/src/styles.css"],
+            "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "projects/hospital/src/styles.css"
+            ],
             "scripts": []
           }
         }

@@ -6,6 +6,8 @@ import {
 import { provideRouter } from '@angular/router';
 
 import { provideHttpClient } from '@angular/common/http';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideStore } from '@ngrx/store';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
 import { categoryReducer, counterReducer } from 'shared';
@@ -18,5 +20,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     provideStore({ counter: counterReducer, categories: categoryReducer }),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
+    provideAnimations(),
+    provideAnimationsAsync(),
   ],
 };
