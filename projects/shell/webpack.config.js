@@ -3,8 +3,7 @@ const {
   withModuleFederationPlugin,
 } = require("@angular-architects/module-federation/webpack");
 
-const env =
-  require("../shell/src/environments/environment.prod.ts").environment;
+const env = require("../shell/src/environments/environment.ts").environment;
 
 console.log("Environment:", env);
 
