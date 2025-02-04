@@ -385,8 +385,7 @@
                 }
               ],
               "outputHashing": "all",
-              "extraWebpackConfig": "projects/flights/webpack.prod.config.js",
-              "baseHref": "/ngrx-monorepo-angular/flights"
+              "extraWebpackConfig": "projects/flights/webpack.prod.config.js"
             },
             "development": {
               "optimization": false,
