@@ -1,12 +1,9 @@
-export const PROD_ENV_URL =
-  'https://settinitesh.github.io/ngrx-monorepo-angular';
-
 export const environment = {
   production: true,
   urls: {
-    mfe: PROD_ENV_URL,
-    akitaCounter: PROD_ENV_URL,
-    flights: PROD_ENV_URL,
-    hospital: PROD_ENV_URL,
+    mfe: 'https://ngrx-monorepo-angular-4at6.vercel.app',
+    akitaCounter: 'https://ngrx-monorepo-angular.vercel.app',
+    flights: 'https://ngrx-monorepo-angular-egov.vercel.app',
+    hospital: 'https://ngrx-monorepo-angular-qkqn.vercel.app',
   },
 };
