@@ -10,8 +10,10 @@ import { provideStoreDevtools } from '@ngrx/store-devtools';
 import { provideHttpClient } from '@angular/common/http';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { categoryReducer } from 'shared';
-import { counterReducer } from '../../../shared/src/public-api';
+import {
+  categoryReducer,
+  counterReducer,
+} from '../../../shared/src/public-api';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
