@@ -58,8 +58,7 @@
                   "replace": "projects/shell/src/environments/environment.ts",
                   "with": "projects/shell/src/environments/environment.prod.ts"
                 }
-              ],
-              "baseHref": "/ngrx-monorepo-angular/"
+              ]
             },
             "development": {
               "optimization": false,
