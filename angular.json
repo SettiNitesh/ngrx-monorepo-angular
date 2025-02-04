@@ -129,7 +129,8 @@
                 "glob": "**/*",
                 "input": "projects/mfe/public",
                 "output": "."
-              }
+              },
+              "projects/mfe/src/_redirects"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
@@ -256,7 +257,8 @@
                 "glob": "**/*",
                 "input": "projects/akita-counter/public",
                 "output": "."
-              }
+              },
+              "projects/akita-counter/src/_redirects"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
@@ -358,7 +360,8 @@
                 "glob": "**/*",
                 "input": "projects/flights/public",
                 "output": "."
-              }
+              },
+              "projects/flights/src/_redirects"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
@@ -460,7 +463,8 @@
                 "glob": "**/*",
                 "input": "projects/hospital/public",
                 "output": "."
-              }
+              },
+              "projects/hospital/src/_redirects"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
