@@ -154,8 +154,7 @@
                 }
               ],
               "outputHashing": "all",
-              "extraWebpackConfig": "projects/mfe/webpack.prod.config.js",
-              "baseHref": "/ngrx-monorepo-angular/mfe"
+              "extraWebpackConfig": "projects/mfe/webpack.prod.config.js"
             },
             "development": {
               "optimization": false,
@@ -282,8 +281,7 @@
                 }
               ],
               "outputHashing": "all",
-              "extraWebpackConfig": "projects/akita-counter/webpack.prod.config.js",
-              "baseHref": "/ngrx-monorepo-angular/akita-counter"
+              "extraWebpackConfig": "projects/akita-counter/webpack.prod.config.js"
             },
             "development": {
               "optimization": false,
@@ -487,8 +485,7 @@
                 }
               ],
               "outputHashing": "all",
-              "extraWebpackConfig": "projects/hospital/webpack.prod.config.js",
-              "baseHref": "/ngrx-monorepo-angular/hospital"
+              "extraWebpackConfig": "projects/hospital/webpack.prod.config.js"
             },
             "development": {
               "optimization": false,
