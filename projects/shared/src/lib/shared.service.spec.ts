@@ -13,4 +13,9 @@ describe('SharedService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('getCategories should return categories', () => {
+    const result = service.getCategories();
+    expect(result.length).toBeGreaterThan(0);
+  });
 });
