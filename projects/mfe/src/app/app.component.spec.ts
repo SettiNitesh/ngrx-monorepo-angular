@@ -1,29 +1,41 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MockStore, provideMockStore } from '@ngrx/store/testing';
+import { addCategory } from '../../../shared/src/public-api';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
+  let component: AppComponent;
+  let dispatchSpy: jasmine.Spy;
+  let store: MockStore;
+  let fixture: ComponentFixture<AppComponent>;
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [AppComponent],
+      providers: [provideMockStore(), provideAnimationsAsync()],
     }).compileComponents();
+
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+
+    store = TestBed.inject(MockStore);
+
+    dispatchSpy = spyOn(store, 'dispatch').and.callThrough();
   });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(component).toBeTruthy();
   });
 
-  it(`should have the 'mfe' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('mfe');
-  });
+  it('add category', () => {
+    component.value = '';
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, mfe');
+    component.addCategory();
+
+    expect(dispatchSpy).toHaveBeenCalledWith(
+      addCategory({ category: { name: component.value } })
+    );
   });
 });

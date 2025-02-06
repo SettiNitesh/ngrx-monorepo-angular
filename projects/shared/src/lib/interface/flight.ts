@@ -7,5 +7,5 @@ export interface IFlight {
   address: string;
   role: string;
   vendorId: number;
-  password: string;
+  password?: string;
 }

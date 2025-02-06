@@ -12,9 +12,7 @@ export class SessionService {
     this.sessionStore.setLoading(true);
     try {
       await new Promise((resolve) => setTimeout(resolve, 300));
-      this.sessionStore.update((_state) => ({
-        name: newName,
-      }));
+      this.sessionStore.update({ name: newName });
     } catch (error) {
       this.sessionStore.setError(error);
     } finally {

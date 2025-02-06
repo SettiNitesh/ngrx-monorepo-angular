@@ -12,7 +12,6 @@ export const createInitialState = (): SessionState => {
 @StoreConfig({
   name: 'session',
   resettable: true,
-  deepFreezeFn: () => null,
   cache: {
     ttl: 3600000,
   },

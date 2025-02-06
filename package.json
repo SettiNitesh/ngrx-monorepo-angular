@@ -23,6 +23,7 @@
     "deploy:gh-pages": "npm run build:all && npx gh-pages -d dist/shell -e shell && npx gh-pages -d dist/flights -e flights && npx gh-pages -d dist/hospital -e hospital && npx gh-pages -d dist/mfe -e mfe && npx gh-pages -d dist/akita-counter -e akita-counter",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "coverage": "ng test --no-watch --code-coverage",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
   "private": true,

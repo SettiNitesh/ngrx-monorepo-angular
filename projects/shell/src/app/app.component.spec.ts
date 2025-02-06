@@ -1,29 +1,44 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
+  let component: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [AppComponent],
+      providers: [provideRouter([])],
     }).compileComponents();
+
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
   });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(component).toBeTruthy();
   });
 
-  it(`should have the 'shell' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('shell');
+  it('should toggle the menu when toggleMenu is called', () => {
+    expect(component.isMenuOpen).toBeFalse();
+
+    component.toggleMenu();
+
+    expect(component.isMenuOpen).toBeTrue();
+
+    component.toggleMenu();
+
+    expect(component.isMenuOpen).toBeFalse();
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, shell');
+  it('should close the menu when closeMenu is called', () => {
+    component.isMenuOpen = true;
+
+    expect(component.isMenuOpen).toBeTrue();
+
+    component.closeMenu();
+
+    expect(component.isMenuOpen).toBeFalse();
   });
 });

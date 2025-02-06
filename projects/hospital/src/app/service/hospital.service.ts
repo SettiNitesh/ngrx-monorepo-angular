@@ -22,7 +22,7 @@ export class HospitalService {
             name: item.name || 'NA',
             mobileNo: item.mobileNo || 'NA',
             city: item.city || 'NA',
-            age: item.age || 'NA',
+            age: item.age || 0,
             gender: item.gender || 'NA',
           }));
           return transformedData;

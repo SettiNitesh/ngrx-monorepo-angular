@@ -93,6 +93,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+            "codeCoverage": true,
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/shell/tsconfig.spec.json",
             "assets": [
@@ -191,6 +192,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+            "codeCoverage": true,
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/mfe/tsconfig.spec.json",
             "assets": [
@@ -324,6 +326,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+            "codeCoverage": true,
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/akita-counter/tsconfig.spec.json",
             "assets": [
@@ -427,6 +430,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+            "codeCoverage": true,
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/flights/tsconfig.spec.json",
             "assets": [
@@ -524,6 +528,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+            "codeCoverage": true,
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/hospital/tsconfig.spec.json",
             "assets": [
